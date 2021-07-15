@@ -4,7 +4,7 @@ export const fetchPokemons = async (amount) =>{
     for(let i = 1; i <= amount; i++){
         const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${i}`;
         const response = await fetch(pokemonUrl, {mode: 'cors',
-            method:'POST',
+            method:'GET',
             headers: {'Content-Type': 'application/json', 'Access-Control-Allow-Origin':'*'}});
         const pokemon = await response.json();
         const id = await pokemon.id;
