@@ -15,4 +15,16 @@ const ButtonComponent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    & button{
+        padding: 5px 10px;
+        background-color: #5a5a5a;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        border-radius: 4px;
+        &:hover{
+            background-color: #777;
+        }
+    }
 `;

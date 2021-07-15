@@ -12,7 +12,7 @@ export default Header;
 
 const HeaderComponent = styled.div`
     text-align:center;
-    background-color: #5a5a5a;
+    background-color: #3a3a3a;
     font-size: 20px;
     color: #10afc4;
     font-family: Arial, sans-serif;

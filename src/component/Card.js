@@ -12,19 +12,25 @@ const Card = ({pokemon, handleCardClick}) => {
 export default Card;
 
 const CardComponent = styled.div`
-    color: red;
-    background-color: white;
+    background-color: #02525c;
     text-align: center;
     cursor: pointer;
-    transition: transfrom 0.8s ease;
+    transition: transform 0.6s ease;
+    border-radius: 4px;
     &:hover{
-        background-color: black;
-        transform: scale(1.02);
+        opacity: 0.7;
+        transform: scale(1.04);
     }
     & img{
         pointer-events: none;
+        width: 70%;
+        height: 60%;
     }
     & p{
         pointer-events: none;
+        height: 20%;
+        color: white;
+        font-weight: bolder;
+        text-transform: capitalize;
     }
 `;

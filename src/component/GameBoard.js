@@ -24,7 +24,7 @@ const GameBoardComponent = styled.div`
     margin: auto 0px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(3, minmax(200px, 1fr));
-    grid-gap: 2px;
+    grid-gap: 3px;
     align-items: center;
     justify-content: center;
 `;

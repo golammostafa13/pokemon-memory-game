@@ -5,7 +5,7 @@ const ScoreCard = ({name, best, current}) => {
         <ScoreCardComponent>
             <h1>Hi, <span>{name}</span></h1>
             <Scores>
-                <Current>Your score: <strong>{current}</strong></Current>
+                <Current>Current score: <strong>{current}</strong></Current>
                 <Best>Best score: <strong>{best}</strong></Best>
             </Scores>
         </ScoreCardComponent>
@@ -26,7 +26,7 @@ const ScoreCardComponent = styled.div`
     & h1{
         flex: 2;
         & span{
-            color: white;
+            color: #999;
         }
     }
 `;
@@ -36,11 +36,15 @@ const Scores = styled.div`
     justify-content: space-around;
     align-items: center;
     flex: 1;
+    & strong{
+        color: orange;
+        font-weight: 600;
+        font-size: 24px;
+    }
 `;
 
 const Current = styled.p`
     color: white;
-    font-size: 20px;
 `;
 
 const Best = styled.p`

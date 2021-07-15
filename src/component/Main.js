@@ -59,7 +59,7 @@ const Main = ({name}) => {
     return (
         <MainComponent>
             <ScoreCard name={name} best={best} current={current}></ScoreCard>
-            <h1>Round {round}/3</h1>
+            <Round>Round: {round} of 3</Round>
             <GameBoard pokemons={pokemons} handleCardClick={handleCardClick}></GameBoard>
         </MainComponent>
     );
@@ -73,6 +73,9 @@ const MainComponent = styled.div`
     flex-direction: column;
     align-items: center;
 	min-height: 100vh;
-    background-color: #10afc4;
+    background-color: #5a5a5a;
     color: #888;
+`;
+const Round = styled.h1`
+    color: #999;
 `;
